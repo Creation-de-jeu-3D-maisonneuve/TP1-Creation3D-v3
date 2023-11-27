@@ -11,13 +11,22 @@ public class Chest : MonoBehaviour
     {
         gameManager = FindAnyObjectByType<GameManager>();
 
-        //Un exemple 
+        //Un exemple :
         gameManager.ChestsFound();
 
+        /*Faire le Trigger pour ouvrir chest et l'enlever après être activer. Empêcher de rappeler le
+          ChestsFound. Éviter que le nombre de coffres trouvés augmente de 1 à chaque fois que le personnage
+          réentre dans le trigger (box collider).
+        */
     }
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
     {
         
     }
