@@ -6,9 +6,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //int -> nombres entiers
-    public TextMeshPro TextUI;
+    public TextMeshProUGUI TextUI;
 
-    private int CoffresATrouvrer = 3;
+    private int CoffresATrouvrer = 4;
     private int CoffresTrouver = 0;
 
     // Start is called before the first frame update

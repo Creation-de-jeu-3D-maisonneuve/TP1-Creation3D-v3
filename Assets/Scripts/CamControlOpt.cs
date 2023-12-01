@@ -23,6 +23,10 @@ public class CamControlOpt : MonoBehaviour
         {
             ActivationCamera(1);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ActivationCamera(2);
+        }
     }
 
     public void ActivationCamera(int indexCamActivation)
