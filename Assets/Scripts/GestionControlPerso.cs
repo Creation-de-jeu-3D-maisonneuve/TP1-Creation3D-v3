@@ -63,8 +63,11 @@ public class GestionControlPerso : MonoBehaviour
             GetComponent<Rigidbody>().AddRelativeForce(0f, ajoutDeGraviter, forceDeDeplacement, ForceMode.VelocityChange);
         }
         */
+
         GetComponent<Rigidbody>().AddRelativeForce(0f, 0f, forceDeDeplacement, ForceMode.VelocityChange);
+
         GetComponent<Animator>().SetFloat("laVitesse", forceDeDeplacement);
+
         /*
         forceDuSaut = 0f;
         GetComponent<Animator>().SetBool("saut", false);

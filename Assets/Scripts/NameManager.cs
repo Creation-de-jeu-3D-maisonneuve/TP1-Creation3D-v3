@@ -5,6 +5,7 @@ using UnityEngine;
 public class NameManager : MonoBehaviour
 {
     public static string NomJoueur;
+
     // Start is called before the first frame update
     void Start()
     {

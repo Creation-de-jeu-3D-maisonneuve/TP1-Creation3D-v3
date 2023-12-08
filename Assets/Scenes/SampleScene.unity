@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: 0.07450981, g: 0.18823531, b: 0.5137255, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.05
+  m_FogDensity: 0.09
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.007875491, g: 0.029294485, b: 0.15386382, a: 1}
+  m_IndirectSpecularColor: {r: 0.007879383, g: 0.029299702, b: 0.15386918, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8642,7 +8642,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8980393, g: 0.9921569, b: 0.9921569, a: 1}
-  m_Intensity: 1.62
+  m_Intensity: 1.89
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -27023,7 +27023,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245361575}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -27054,7 +27054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1af1dbf779f6b4d93536da07ffe46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laVitesse: 3
+  laVitesse: 2
   vitesseTourner: 4
   laHauteurDuSaut: 25
   auSol: 0

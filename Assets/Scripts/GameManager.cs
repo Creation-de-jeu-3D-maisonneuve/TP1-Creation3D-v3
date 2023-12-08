@@ -11,9 +11,12 @@ public class GameManager : MonoBehaviour
     private int CoffresATrouvrer = 4;
     private int CoffresTrouver = 0;
 
+    public static bool Gagner;
+
     // Start is called before the first frame update
     void Start()
     {
+
         UpdateText();
     }
 
@@ -22,7 +25,11 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(2);
+            JeuGagner();
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            JeuPerdu();
         }
     }
 
@@ -37,5 +44,22 @@ public class GameManager : MonoBehaviour
     {
         CoffresTrouver += 1;
         UpdateText();
+
+        if (CoffresTrouver == CoffresATrouvrer)
+        {
+            JeuGagner();
+        }
+    }
+
+    private void JeuGagner()
+    {
+        Gagner = true;
+        SceneManager.LoadScene(2);
+    }
+
+    private void JeuPerdu()
+    {
+        Gagner = false;
+        SceneManager.LoadScene(2);
     }
 }
