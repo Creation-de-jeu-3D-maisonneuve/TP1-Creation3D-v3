@@ -426,6 +426,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.40698242, y: 6.025266, z: 2.3921502}
   m_Center: {x: 1.8848877, y: 0.00013828278, z: 1.0540217}
+--- !u!1 &4440629862873717191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6360680076318878809}
+  m_Layer: 0
+  m_Name: Jumpscare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6360680076318878809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4440629862873717191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5967270150302687961}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4728050384963315226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1491,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5509336214036797225, guid: 20bf615afd6a15443a53b367fdc96a3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6360680076318878809}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3319328064073548359, guid: 20bf615afd6a15443a53b367fdc96a3c, type: 3}
       insertIndex: -1
