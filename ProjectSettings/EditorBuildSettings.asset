@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: d09f61c7e0d592d45911a63e9880b188
+    path: Assets/EntrainementExam/Scenes/Intro.unity
+    guid: 7ca97fb99a780804d9585fd041bac7f1
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/EntrainementExam/Scenes/Game.unity
+    guid: 24cba3b9481dc3f43bd0176ad7ad1606
   - enabled: 1
-    path: Assets/Scenes/FIn.unity
-    guid: 3eb33dc5649a45e408c88484a64133be
+    path: Assets/EntrainementExam/Scenes/Outro.unity
+    guid: d4bf0aaffb13c4a4da61c5db2f34066c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
