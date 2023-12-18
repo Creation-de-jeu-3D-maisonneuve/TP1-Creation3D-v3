@@ -9361,7 +9361,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8980393, g: 0.9921569, b: 0.9921569, a: 1}
-  m_Intensity: 1.38
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -21614,6 +21614,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d1328cbf3afef14d8840044e3a4989b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1173966187}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d1328cbf3afef14d8840044e3a4989b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1765993157}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2d1328cbf3afef14d8840044e3a4989b, type: 3}
       insertIndex: -1
@@ -28589,7 +28592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1af1dbf779f6b4d93536da07ffe46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laVitesse: 7
+  laVitesse: 2
   vitesseTourner: 4
   laHauteurDuSaut: 25
   auSol: 0
@@ -31997,7 +32000,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765993154}
   serializedVersion: 8
-  lengthInSec: 3
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -32062,7 +32065,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -32243,7 +32246,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.6
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -32826,7 +32829,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 150
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -36720,12 +36723,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765993154}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 621, y: 813.8405, z: 1387}
+  m_LocalRotation: {x: -0.6017839, y: 0.37128994, z: 0.37128994, w: 0.6017839}
+  m_LocalPosition: {x: 46.807346, y: -1.44, z: -209.76158}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1245361584}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1769050795
 GameObject:
@@ -50403,6 +50406,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4200205297041644545, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6161978575001065613, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -50479,7 +50486,6 @@ SceneRoots:
   - {fileID: 111898578}
   - {fileID: 6971490539338401383}
   - {fileID: 1486687530}
-  - {fileID: 1765993157}
   - {fileID: 1791263892}
   - {fileID: 1516929029}
   - {fileID: 1069213035}

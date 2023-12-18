@@ -9,6 +9,8 @@ public class Chest : MonoBehaviour
     public GameObject CoffreFermer;
     private bool CoffreDejaOuvert = false;
 
+    public bool BonCoffre = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,9 +42,12 @@ public class Chest : MonoBehaviour
         {
             CoffreFermer.SetActive(false);
             CoffreOuvert.SetActive(true);
-            gameManager.ChestsFound();
             CoffreDejaOuvert = true;
+
+            if (BonCoffre)
+            {
+                 gameManager.ChestsFound();
+            }
         }
-        
     }
 }
