@@ -28589,7 +28589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1af1dbf779f6b4d93536da07ffe46c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laVitesse: 2
+  laVitesse: 7
   vitesseTourner: 4
   laHauteurDuSaut: 25
   auSol: 0
@@ -50395,9 +50395,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2993550568474587173, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4073327274194228274, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161978575001065613, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719903971237885816, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9041084271250592360, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
       propertyPath: m_Name
