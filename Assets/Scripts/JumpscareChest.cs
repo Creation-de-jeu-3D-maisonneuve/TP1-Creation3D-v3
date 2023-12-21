@@ -4,25 +4,34 @@ using UnityEngine;
 
 public class JumpscareChest : MonoBehaviour
 {
-    public GameObject jumpscareChest;
-    public AudioClip sonJumpscare;
+    //Groupe qui permet de rendre le UI transparent.
+    public CanvasGroup canvasGroup;
+
+    //Le temps de fondu (fade-out) en secondes -> de opaque à transparent.
+    public float DurerDeFondu = 2f;
+
+    //Compteur de temps -> celui qui va compter le nombres de secondes qui s'est écoulé depuis le début du fondu.
+    private float TempsEcouler = 0f;
+
+    //public AudioClip sonJumpscare;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        jumpscareChest.SetActive(false);
+        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        if (!audioSource.isPlaying)
+        {
+            //Temps réel qui s'est écoulé au fur et à mesure (dans le jeu).
+            TempsEcouler += Time.deltaTime;
 
-    private void OnTriggerEnter(Collider infoTrigger)
-    {
-        jumpscareChest.SetActive(true);
-        //GetComponent<AudioSource>().Play();
-        GetComponent<AudioSource>().PlayOneShot(sonJumpscare);
+            canvasGroup.alpha = Mathf.Lerp(1, 0, TempsEcouler / DurerDeFondu);
+        }
     }
 }
