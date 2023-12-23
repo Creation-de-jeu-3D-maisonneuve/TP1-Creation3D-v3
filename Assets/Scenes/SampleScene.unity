@@ -885,6 +885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log house (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8726186967736080288, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9361,7 +9365,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8980393, g: 0.9921569, b: 0.9921569, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.74
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -30055,6 +30059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log house (6)(PasDeTresor)
       objectReference: {fileID: 0}
+    - target: {fileID: 8726186967736080288, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31896,6 +31904,10 @@ PrefabInstance:
     - target: {fileID: 3496318534525897858, guid: 968a53a98137e284d8289895ff745db8, type: 3}
       propertyPath: m_Name
       value: Log house (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8726186967736080288, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37901,6 +37913,10 @@ PrefabInstance:
     - target: {fileID: 5926716749275832486, guid: 968a53a98137e284d8289895ff745db8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8726186967736080288, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50385,6 +50401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmokeChestOpen
       objectReference: {fileID: 0}
+    - target: {fileID: 8478629479345163711, guid: 55626bdacd625a943b69e41e450037a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50442,6 +50462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log house (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8726186967736080288, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50459,6 +50483,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4045281907822985264, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4073327274194228274, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -50466,6 +50494,14 @@ PrefabInstance:
     - target: {fileID: 4200205297041644545, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612161868876826467, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670550698788082631, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 8719903971237885816, guid: cb7e8d702d0036d4aa7dbcd257331373, type: 3}
       propertyPath: m_PlayOnAwake
