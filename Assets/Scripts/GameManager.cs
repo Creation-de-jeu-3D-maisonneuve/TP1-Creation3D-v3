@@ -7,11 +7,16 @@ public class GameManager : MonoBehaviour
 {
     //int -> nombres entiers
     public TextMeshProUGUI TextUI;
-    
+
     private int CoffresATrouvrer = 4;
     private int CoffresTrouver = 0;
 
+    public GameObject bonCoffre;
+    public GameObject MauvaisCoffre;
+
     public static bool Gagner;
+
+    private int nbrDeVies = 5;
 
     //Nom qui commence avec une majuscule quand c'est "public" ou pour une "classe" ou une "méthode".
     private List<Transform> chestSpawnPoints = new();
@@ -34,6 +39,8 @@ public class GameManager : MonoBehaviour
                 Transform ChestSpawnPoint = chestSpawnPoints[Random.Range(0, chestSpawnPoints.Count)];
 
                 //Il faut Instantier le "bon coffre".
+                //Instantiate(Object original, Transform parent);
+                Instantiate(bonCoffre, ChestSpawnPoint);
 
                 chestSpawnPoints.Remove(ChestSpawnPoint);
             }
@@ -42,6 +49,7 @@ public class GameManager : MonoBehaviour
             foreach (Transform ChestSpawnPoint in chestSpawnPoints)
             {
                 //Il faut Instantier le "mauvais coffre".
+                Instantiate(MauvaisCoffre, ChestSpawnPoint);
             }
             // Supprime tous les éléments de la liste.
             chestSpawnPoints.Clear();
@@ -90,5 +98,15 @@ public class GameManager : MonoBehaviour
     public void DeclareSpawnPoint(Transform ChestSpawnPoint)
     {
         chestSpawnPoints.Add(ChestSpawnPoint);
+    }
+
+    public void JoueurToucher()
+    {
+        nbrDeVies -= 1;
+
+        if (nbrDeVies <= 0)
+        {
+            JeuPerdu();
+        }
     }
 }

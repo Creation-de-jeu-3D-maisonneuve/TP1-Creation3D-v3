@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2641273169555393979}
+  - component: {fileID: 6974577605387707395}
   m_Layer: 0
   m_Name: ChestSpawn
   m_TagString: Untagged
@@ -31,6 +32,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9206570492083159790}
   m_LocalEulerAnglesHint: {x: -42.915, y: 90, z: 90}
+--- !u!114 &6974577605387707395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6123500099436135391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb8d42198b08fa42bccbf3ec8d0f227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5710885639716966988
 PrefabInstance:
   m_ObjectHideFlags: 0

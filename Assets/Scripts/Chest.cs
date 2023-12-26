@@ -11,7 +11,7 @@ public class Chest : MonoBehaviour
 
     public bool BonCoffre = true;
 
-    public ParticleSystem SmokeChest;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class Chest : MonoBehaviour
         CoffreFermer.SetActive(true);
         CoffreOuvert.SetActive(false);
 
-        SmokeChest = GetComponent<ParticleSystem>();
+        
 
         gameManager = FindAnyObjectByType<GameManager>();
 
@@ -47,7 +47,6 @@ public class Chest : MonoBehaviour
             CoffreFermer.SetActive(false);
             CoffreOuvert.SetActive(true);
             CoffreDejaOuvert = true;
-            SmokeChest.Play();
 
             if (BonCoffre)
             {
