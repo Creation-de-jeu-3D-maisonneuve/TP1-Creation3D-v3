@@ -8,6 +8,8 @@ public class TextDeFin : MonoBehaviour
     public GameObject TextGagne;
     public GameObject TextPerdu;
 
+    public GameObject AnimGagne;
+    public GameObject AnimPerdu;
 
 
     // Start is called before the first frame update
@@ -29,6 +31,9 @@ public class TextDeFin : MonoBehaviour
 
             TextGagne.SetActive(true);
             TextPerdu.SetActive(false);
+
+            AnimGagne.SetActive(true);
+            AnimPerdu.SetActive(false);
         }
         else
         {
@@ -36,6 +41,9 @@ public class TextDeFin : MonoBehaviour
 
             TextGagne.SetActive(false);
             TextPerdu.SetActive(true);
+
+            AnimGagne.SetActive(false);
+            AnimPerdu.SetActive(true);
         }
         
         //Essayer de faire charger la scène quand il perd et quand il gagne !!
