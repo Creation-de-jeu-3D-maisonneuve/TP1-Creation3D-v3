@@ -31,6 +31,7 @@ public class JumpscareChest : MonoBehaviour
             //Temps réel qui s'est écoulé au fur et à mesure (dans le jeu).
             TempsEcouler += Time.deltaTime;
 
+            //Pas sûr d'avoir complétement compris le ligne de code ci-dessous !!
             canvasGroup.alpha = Mathf.Lerp(1, 0, TempsEcouler / DurerDeFondu);
         }
     }

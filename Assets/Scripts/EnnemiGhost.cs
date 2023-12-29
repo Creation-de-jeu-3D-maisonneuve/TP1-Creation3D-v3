@@ -6,8 +6,9 @@ using UnityEngine.AI;
 public class EnnemiGhost : MonoBehaviour
 {
     private Player LeChevalier;
-    private GameManager gameManager;
+    private GhostManager ghostManager;
     private NavMeshAgent navMeshAgent;
+    private ZoneGhostSpawn zoneGhostSpawn;
     private float TempsEcouler;
 
     private Vector3 NextPosition;
@@ -17,9 +18,11 @@ public class EnnemiGhost : MonoBehaviour
     {
         LeChevalier = FindAnyObjectByType<Player>();
 
-        gameManager = FindAnyObjectByType<GameManager>();
+        ghostManager = FindAnyObjectByType<GhostManager>();
 
         navMeshAgent = GetComponent<NavMeshAgent>();
+
+        zoneGhostSpawn = FindAnyObjectByType<ZoneGhostSpawn>();
 
     }
 
@@ -43,9 +46,10 @@ public class EnnemiGhost : MonoBehaviour
     {
         if (collider.GetComponent<Player>())
         {
-            gameManager.JoueurToucher();
+            ghostManager.JoueurToucher();
 
             //Instancier le jumpscare
+            
 
             Destroy(gameObject);
         }

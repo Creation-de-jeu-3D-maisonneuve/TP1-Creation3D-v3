@@ -28,7 +28,7 @@ public class ZoneGhostSpawn : MonoBehaviour
             if (Physics.Raycast(origin, Vector3.down, out RaycastHit hitInfo, Mathf.Infinity, layerMask))
             {
                 //Quaternion.identity -> La rotation par défaut, soit x = 0 , y = 0 , z = 0 .
-                //
+                //??
                 ghost = Instantiate(ghostPrefrab, hitInfo.point, Quaternion.identity);
             }
         }

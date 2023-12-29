@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     public static bool Gagner;
 
-    private int nbrDeVies = 5;
+    //private int nbrDeVies = 5;
 
     //Nom qui commence avec une majuscule quand c'est "public" ou pour une "classe" ou une "méthode".
     private List<Transform> chestSpawnPoints = new();
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    private void JeuPerdu()
+    public void JeuPerdu()
     {
         Gagner = false;
         SceneManager.LoadScene(2);
@@ -98,6 +98,12 @@ public class GameManager : MonoBehaviour
     public void DeclareSpawnPoint(Transform ChestSpawnPoint)
     {
         chestSpawnPoints.Add(ChestSpawnPoint);
+    }
+
+    /*
+    void UpdatePointsDeVies()
+    {
+        TextUI.text = $"{nbrDeVies}";
     }
 
     public void JoueurToucher()
@@ -109,4 +115,5 @@ public class GameManager : MonoBehaviour
             JeuPerdu();
         }
     }
+    */
 }
