@@ -623,6 +623,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46f311046d2104da8b56be3d0a49a119, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6884620986188742216}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46f311046d2104da8b56be3d0a49a119, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7058513383237406931}
   m_SourcePrefab: {fileID: 100100000, guid: 46f311046d2104da8b56be3d0a49a119, type: 3}
 --- !u!1 &1382153988608983738 stripped
 GameObject:
@@ -708,6 +711,21 @@ CapsuleCollider:
   m_Height: 1.0224533
   m_Direction: 1
   m_Center: {x: -0.0056171417, y: 0.57127, z: 0}
+--- !u!114 &7058513383237406931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382153988608983738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51ad198af8c9ed48982b27fd6e380e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 5000569631147261357}
+  DurerDeFondu: 2
+  jumpscareGhost: {fileID: 8805713833338769515}
 --- !u!4 &1758010337017059328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 46f311046d2104da8b56be3d0a49a119, type: 3}
@@ -733,7 +751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 135188693996129266, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4737341588198005184, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
       propertyPath: m_Pivot.x
@@ -821,16 +839,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6425842278300544918, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2889034472770398314, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6425842278300544918, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 263926881381322263}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
 --- !u!225 &5000569631147261357 stripped
 CanvasGroup:
@@ -847,18 +862,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6425842278300544918, guid: 69654bd352825d04bad4047d6f320ec1, type: 3}
   m_PrefabInstance: {fileID: 2529056591499296765}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &263926881381322263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8805713833338769515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a51ad198af8c9ed48982b27fd6e380e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 5000569631147261357}
-  DurerDeFondu: 2
-  jumpscareGhost: {fileID: 8805713833338769515}

@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     //private int nbrDeVies = 5;
 
+    private int TempsJeu;
+
     //Nom qui commence avec une majuscule quand c'est "public" ou pour une "classe" ou une "méthode".
     private List<Transform> chestSpawnPoints = new();
 
