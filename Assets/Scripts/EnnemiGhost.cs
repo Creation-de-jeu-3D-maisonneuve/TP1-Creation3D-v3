@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnnemiGhost : MonoBehaviour
 {
+
+    public GameObject jumpscareGhost;
     private Player LeChevalier;
     private GhostManager ghostManager;
     private NavMeshAgent navMeshAgent;
@@ -44,12 +46,18 @@ public class EnnemiGhost : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.GetComponent<Player>())
+        Player player = collider.GetComponent<Player>();
+
+        //player != null -> S'il existe.
+        if (player != null)
         {
             ghostManager.JoueurToucher();
 
+            //Respawn est dans le script "Player". le "." permet d'aller le chercher.
+            player.Respawn();
+
             //Instancier le jumpscare
-            
+            Instantiate(jumpscareGhost);
 
             Destroy(gameObject);
         }

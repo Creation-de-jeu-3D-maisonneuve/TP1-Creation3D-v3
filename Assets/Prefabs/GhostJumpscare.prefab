@@ -112,8 +112,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostJumpscare
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 492751166591162833, guid: 92e3671b520750d4c8c5a29a93a76052, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8641385797293923885, guid: 92e3671b520750d4c8c5a29a93a76052, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1733438882164027870}
   m_SourcePrefab: {fileID: 100100000, guid: 92e3671b520750d4c8c5a29a93a76052, type: 3}
+--- !u!1 &6425842278300544918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8641385797293923885, guid: 92e3671b520750d4c8c5a29a93a76052, type: 3}
+  m_PrefabInstance: {fileID: 3369100545616064955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1733438882164027870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6425842278300544918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51ad198af8c9ed48982b27fd6e380e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 7384940250290684496}
+  DurerDeFondu: 2
+  jumpscareGhost: {fileID: 0}
+--- !u!225 &7384940250290684496 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 5241599662733571051, guid: 92e3671b520750d4c8c5a29a93a76052, type: 3}
+  m_PrefabInstance: {fileID: 3369100545616064955}
+  m_PrefabAsset: {fileID: 0}

@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 3396059907681483337}
   - component: {fileID: 492751166591162833}
   m_Layer: 5
-  m_Name: Jumpscare
+  m_Name: CoffreJumpscare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

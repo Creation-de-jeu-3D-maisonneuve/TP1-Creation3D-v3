@@ -16,12 +16,10 @@ public class JumpscareGhost : MonoBehaviour
     //public AudioClip sonJumpscare;
     private AudioSource audioSource;
 
-    public GameObject jumpscareGhost;
 
     // Start is called before the first frame update
     void Start()
     {
-        jumpscareGhost.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -29,7 +27,7 @@ public class JumpscareGhost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        
         if (!audioSource.isPlaying)
         {
             //Temps réel qui s'est écoulé au fur et à mesure (dans le jeu).
@@ -38,23 +36,11 @@ public class JumpscareGhost : MonoBehaviour
             //Pas sûr d'avoir complétement compris le ligne de code ci-dessous !!
             canvasGroup.alpha = Mathf.Lerp(1, 0, TempsEcouler / DurerDeFondu);
         }
-        */
-    }
-
-    private void OnTriggerEnter(Collider infoTrigger)
-    {
-        if (infoTrigger.GetComponent<Player>())
+        
+        if (TempsEcouler > DurerDeFondu)
         {
-            jumpscareGhost.SetActive(true);
-
-            if (!audioSource.isPlaying)
-            {
-                //Temps réel qui s'est écoulé au fur et à mesure (dans le jeu).
-                TempsEcouler += Time.deltaTime;
-
-                //Pas sûr d'avoir complétement compris le ligne de code ci-dessous !!
-                canvasGroup.alpha = Mathf.Lerp(1, 0, TempsEcouler / DurerDeFondu);
-            }
+            Destroy(gameObject);
         }
+
     }
 }
