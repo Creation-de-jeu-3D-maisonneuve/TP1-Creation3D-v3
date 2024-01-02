@@ -8,7 +8,7 @@ public class EnnemiGhost : MonoBehaviour
 
     public GameObject jumpscareGhost;
     private Player LeChevalier;
-    private GhostManager ghostManager;
+    private ViesManager viesManager;
     private NavMeshAgent navMeshAgent;
     private ZoneGhostSpawn zoneGhostSpawn;
     private float TempsEcouler;
@@ -20,7 +20,7 @@ public class EnnemiGhost : MonoBehaviour
     {
         LeChevalier = FindAnyObjectByType<Player>();
 
-        ghostManager = FindAnyObjectByType<GhostManager>();
+        viesManager = FindAnyObjectByType<ViesManager>();
 
         navMeshAgent = GetComponent<NavMeshAgent>();
 
@@ -51,7 +51,7 @@ public class EnnemiGhost : MonoBehaviour
         //player != null -> S'il existe.
         if (player != null)
         {
-            ghostManager.JoueurToucher();
+            viesManager.JoueurToucher();
 
             //Respawn est dans le script "Player". le "." permet d'aller le chercher.
             player.Respawn();

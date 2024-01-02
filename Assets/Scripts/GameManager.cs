@@ -62,6 +62,8 @@ public class GameManager : MonoBehaviour
             chestSpawnPoints.Clear();
         }
 
+        //TO DO !! À ENLEVER AVANT
+        /*
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             JeuGagner();
@@ -70,6 +72,7 @@ public class GameManager : MonoBehaviour
         {
             JeuPerdu();
         }
+        */
     }
 
     void UpdateText()
@@ -95,15 +98,50 @@ public class GameManager : MonoBehaviour
         //Enlever le temps passé dans la scène d'introduction jusqu'à ce que je commence la jeu dans la scène principal.
         TempsJeu = Time.time - TempsDepart;
 
-        string keyname = "pointage";
-        //vrai ou faux si la clé existe ou pas.
-        //PlayerPrefs.HasKey(keyname) -> on regarde s'il y a déjà un score enregistré.
-        // !PlayerPrefs.HasKey(keyname) -> on regarde s'il n'y a pas de score enregistré.
-        //PlayerPrefs.GetFloat(keyname) > TempsJeu -> on regarde si le score déjà enregistré est supérieur au nouveau.
-        if (!PlayerPrefs.HasKey(keyname) || PlayerPrefs.GetFloat(keyname) > TempsJeu)
-        {
-            PlayerPrefs.SetFloat(keyname, TempsJeu);
-        } 
+        string scoreNamesKey = "scoreNames";
+        string scoreTimesKey = "scoreTimes";
+
+        //on récupère les scores Names et Times .
+
+        string[] scoreNames = PlayerPrefsX.GetStringArray(scoreNamesKey);
+
+        float[] scoreTimes = PlayerPrefsX.GetFloatArray(scoreTimesKey);
+
+        ///temp -> temporaire .
+        string[] tempScoreNames = new string[scoreNames.Length + 1];
+
+        float[] tempScoreTimes = new float[scoreTimes.Length + 1];
+
+        //Copie le contenu de scoreNames dans tempScoreNames.
+        scoreNames.CopyTo(tempScoreNames, 0);
+
+        scoreTimes.CopyTo(tempScoreTimes, 0);
+
+        tempScoreNames[scoreNames.Length] = NameManager.NomJoueur;
+
+        tempScoreTimes[scoreTimes.Length] = TempsJeu;
+
+        //trier deux tableaux  selon l'ordre croissant des scores et faire suivre les noms correspondants dans le tableau des noms.
+        System.Array.Sort(tempScoreTimes, tempScoreNames);
+
+        /////
+
+        scoreNames = new string[Mathf.Min(3, tempScoreNames.Length)];
+
+        //On veut utiliser la longueur de tempScoreTimes et si celle-ci est plus grande que 3, on utilise 3 à la place.
+        scoreTimes = new float[Mathf.Min(3, tempScoreTimes.Length)];
+
+        //scoreNames.Length -> la longueur qu'on veut copier.
+        //System.Array.Copy -> aller chercher la documentation pour mieux comprendre et il y a des exemples.
+        System.Array.Copy(tempScoreNames, scoreNames, scoreNames.Length);
+
+        System.Array.Copy(tempScoreTimes, scoreTimes, scoreTimes.Length);
+        
+        //Sauvegarder le tableau scoreNames à la clé scoreNamesKey .
+        PlayerPrefsX.SetStringArray(scoreNamesKey, scoreNames);
+
+        //Sauvegarder le tableau scoreTimes à la clé scoreTimesKey .
+        PlayerPrefsX.SetFloatArray(scoreTimesKey, scoreTimes);
 
         Gagner = true;
         SceneManager.LoadScene(2);
