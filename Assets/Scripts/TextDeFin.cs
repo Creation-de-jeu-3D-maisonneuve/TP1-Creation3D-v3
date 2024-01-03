@@ -10,6 +10,9 @@ public class TextDeFin : MonoBehaviour
 
     public GameObject AnimGagne;
     public GameObject AnimPerdu;
+    
+    //public AudioSource SonGagner;
+    //public AudioSource sonPerdu;
 
 
     // Start is called before the first frame update
