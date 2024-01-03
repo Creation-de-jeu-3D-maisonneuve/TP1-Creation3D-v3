@@ -37,6 +37,6 @@ public class Player : MonoBehaviour
     public void Respawn()
     {
         // SpawnPoint est dans le script "CheckPoint"
-        rigidbody.Move(lastCheckPoint.SpawnPoint.position, lastCheckPoint.SpawnPoint.rotation);
+        rigidbody.MovePosition(lastCheckPoint.SpawnPoint.position);
     }
 }

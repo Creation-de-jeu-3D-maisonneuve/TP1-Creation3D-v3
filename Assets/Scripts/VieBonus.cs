@@ -20,7 +20,6 @@ public class VieBonus : MonoBehaviour
 
     private void OnTriggerEnter(Collider infoTrigger)
     {
-        Player player = infoTrigger.GetComponent<Player>();
 
         if (infoTrigger.GetComponent<Player>())
         {

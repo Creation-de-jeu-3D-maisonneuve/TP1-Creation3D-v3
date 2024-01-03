@@ -1,5 +1,71 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5696314607380410368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6788126111279832733}
+  - component: {fileID: 4636552409935215304}
+  - component: {fileID: 3964761731928212850}
+  m_Layer: 0
+  m_Name: CameraChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6788126111279832733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696314607380410368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 9206570492083159790}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4636552409935215304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696314607380410368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02a082afd0e577418388fdcb080b365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &3964761731928212850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696314607380410368}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.510912, y: 5.323135, z: 2.6768525}
+  m_Center: {x: -0.052401543, y: -0.013100147, z: 1.3362427}
 --- !u!1 &6123500099436135391
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +232,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log house Dynamique
       objectReference: {fileID: 0}
+    - target: {fileID: 3795596090581985429, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -1.8563
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795596090581985429, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 1.0088001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795596090581985429, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.4469999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3509860762809563063, guid: 968a53a98137e284d8289895ff745db8, type: 3}
@@ -176,6 +254,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3496318534525407394, guid: 968a53a98137e284d8289895ff745db8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7155992818140959561}
+    - targetCorrespondingSourceObject: {fileID: 3496318534525407394, guid: 968a53a98137e284d8289895ff745db8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6788126111279832733}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 968a53a98137e284d8289895ff745db8, type: 3}
 --- !u!4 &9206570492083159790 stripped
